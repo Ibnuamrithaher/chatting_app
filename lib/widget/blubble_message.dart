@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class BubbleMessage extends StatelessWidget {
-  BubbleMessage({Key? key, required this.message, required this.isMe})
+  const BubbleMessage({Key? key, required this.message, required this.isMe})
       : super(key: key);
-  String message;
-  bool isMe;
+  final String message;
+  final bool isMe;
   @override
   Widget build(BuildContext context) {
     return Row(
